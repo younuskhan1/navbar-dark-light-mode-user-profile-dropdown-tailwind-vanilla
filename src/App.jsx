@@ -1,10 +1,12 @@
 import Nav from "./components/Nav/Nav";
+import Home from "./components/Home/Home";
 
 
 const App = () => {
   return (
-    <div className="bg-slate-900">
+    <div>
       <Nav></Nav>
+      <Home></Home>
     </div>
   );
 };
