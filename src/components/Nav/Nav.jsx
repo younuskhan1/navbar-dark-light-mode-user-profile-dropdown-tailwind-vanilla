@@ -18,10 +18,12 @@ const Nav = () => {
     useEffect(()=>{
         if(theme === "dark"){
          element.classList.add("dark");
+        //  <html lang="en" class="dark"></html> in index.html
          localStorage.setItem("theme", "dark");
         }
         else{
          element.classList.remove("dark");
+        //  <html lang="en"></html> in index.html
          localStorage.removeItem("theme");
         }
       },[theme,element]);
