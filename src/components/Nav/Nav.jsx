@@ -9,8 +9,11 @@ import {BiSolidMoon} from "react-icons/bi";
 const Nav = () => {
     const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
     const [click, setClick] = useState(false);
+
+    // document.documentElement returns the Element that is the root element of the document (for example, the <html> element for HTML documents). 
     const element = document.documentElement;
     console.log(element);
+
 
     useEffect(()=>{
         if(theme === "dark"){
