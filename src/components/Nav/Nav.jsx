@@ -32,7 +32,7 @@ const Nav = () => {
         setClick(!click);
     }
     const content = <>
-     <div className={"md:hidden block absolute top-16 w-4/5 left-0 right-0 bg-slate-900 transition duration-500"}>
+     <div className="md:hidden block absolute top-16 w-4/5 left-0 right-0 bg-slate-900 transition ease-in duration-500">
          <ul className="text-center text-[18px] p-20">
             <Link spy={true} smooth={true} to="Home">
                 <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded transition duration-300">Home</li>
